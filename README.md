@@ -7,3 +7,5 @@ Common Linux commands list.
 - [Basic](./docs/basic.md)
 
 - [Navigate the file system](./docs/fs.md)
+
+- [Manipulate files and directories](./docs/mfd.md)
