@@ -41,7 +41,7 @@ common-linux-cmd
 
 ## cd
 
-> cd - bash built-in command
+> cd (built-in) - change directory
 
 `$ cd [PATHNAME]` will change the directory to the [PATHNAME].
 
