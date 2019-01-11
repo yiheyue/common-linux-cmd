@@ -12,4 +12,6 @@ Common Linux commands list.
 
 - [About commands](./docs/about_cmd.md)
 
-- [I/O redirection](./docs/redir.md)
+- [I/O redirection](./docs/redirect.md)
+
+- [Shell expansions and quoting](./docs/sheq.md)
