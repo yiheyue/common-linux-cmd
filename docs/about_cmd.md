@@ -16,7 +16,7 @@ A command can be one of four different types:
 
 This command can display the kind of command.
 
-display the kind of these commands
+e.g. display the kind of these commands
 
 ```
 user@pc ~ $ type type
@@ -37,7 +37,7 @@ Sometimes there is more than one version of an executable program installed on a
 
 The `which` command can determine the exact location of a given executable program.
 
-get the exact location of these commands
+e.g. get the exact location of these commands
 
 ```
 user@pc ~ $ which which
@@ -53,7 +53,7 @@ user@pc ~ $ which tree
 
 The `help` command can get the documentation of the built-in commands.
 
-display the documentation of `cd`
+e.g. display the documentation of `cd`
 
 ```
 user@pc ~ $ help cd
@@ -70,7 +70,7 @@ cd: cd [-L|[-P [-e]] [-@]] [dir]
 
 For most executable programs, you can get their documentations from `man` command.
 
-display the documentation of `man`
+e.g. display the documentation of `man`
 
 ```
 user@pc ~ $ man man
@@ -98,7 +98,7 @@ Use `apropos` command can match the exact command that you search.
 
 Its function is the same as `man -k command`.
 
-match `aprop`
+e.g. match `aprop`
 
 ```
 user@pc ~ $ apropos aprop
@@ -109,7 +109,7 @@ apropos (1) - search the manual page names and descriptions
 
 > whatis (1) - display one-line manual page descriptions
 
-display the simple description about `whatis`
+e.g. display the simple description about `whatis`
 
 ```
 user@pc ~ $ whatis whatis
@@ -120,7 +120,7 @@ whatis (1) - display one-line manual page descriptions
 
 > whereis (1) - locate the binary, source, and manual page files for a command
 
-locate the binary, source, and manual page files of `tree`
+e.g. locate the binary, source, and manual page files of `tree`
 
 ```
 user@pc ~ $ whereis tree
@@ -146,7 +146,7 @@ The GNU Project provides an alternative to man pages for their programs, called 
 | [Enter]                  | Follow the hyperlink at the cursor location                                 |
 | q                        | Quit                                                                        |
 
-display a menu page with hyperlinks to each program contained in the coreutils package
+e.g. display a menu page with hyperlinks to each program contained in the coreutils package
 
 ```
 user@pc ~ $ info coreutils
@@ -156,7 +156,7 @@ user@pc ~ $ info coreutils
 
 > alias (built-in) - Define or display aliases
 
-create an alias for a list of commands
+e.g. create an alias for a list of commands
 
 ```
 user@pc ~ $ alias foo='cd /usr; ls; cd -'
@@ -164,7 +164,7 @@ user@pc ~ $ alias foo='cd /usr; ls; cd -'
 
 > unalias (built-in) - Remove each NAME from the list of defined aliases
 
-remove an alias
+e.g. remove an alias
 
 ```
 user@pc ~ $ unalias foo

@@ -4,7 +4,7 @@
 
 > pwd (1) - print name of current/working directory
 
-print the current directory
+e.g. print the current directory
 
 ```
 user@pc ~ $ pwd
@@ -15,20 +15,20 @@ user@pc ~ $ pwd
 
 > ls (1) - list directory contents
 
-list current directory files and directories
+e.g. list current directory files and directories
 
 ```
 user@pc ~ $ ls
 Desktop   Documents
 ```
 
-list all files and directories
+e.g. list all files and directories
 
 ```
 user@pc ~ $ ls -alF
 ```
 
-list the `/home/user` and `~/repos` all files and directories
+e.g. list the `/home/user` and `~/repos` all files and directories
 
 ```
 user@pc ~ $ ls /home/user ~/repos
@@ -47,7 +47,7 @@ common-linux-cmd
 
 [PATHNAME] can be absolute pathname or relative pathname.
 
-change the directory to the `repos`
+e.g. change the directory to the `repos`
 
 ```
 user@pc ~ $ cd repos
@@ -73,7 +73,7 @@ There are two special symbols in relative pathname.
 
 Unix like OS: "Everything is file."
 
-display the `hello.c` file type
+e.g. display the `hello.c` file type
 
 ```
 user@pc ~ $ file hello.c
@@ -84,7 +84,7 @@ hello.c: C source, ASCII text
 
 > less (1) - opposite of more
 
-view text file content
+e.g. view text file content
 
 ```
 user@pc ~ $ less foo

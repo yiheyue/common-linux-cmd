@@ -11,3 +11,5 @@ Common Linux commands list.
 - [Manipulate files and directories](./docs/mfd.md)
 
 - [About commands](./docs/about_cmd.md)
+
+- [I/O redirection](./docs/redir.md)

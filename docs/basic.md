@@ -4,7 +4,7 @@
 
 > date (1) - print or set the system date and time
 
-print the date of today
+e.g. print the date of today
 
 ```
 user@pc ~ $ date
@@ -15,7 +15,7 @@ Mon Jan  7 07:23:09 EST 2019
 
 > cal (1) - displays a calendar and the date of Easter
 
-display the calendar of this month
+e.g. display the calendar of this month
 
 ```
 user@pc ~ $ cal
@@ -32,7 +32,7 @@ Su Mo Tu We Th Fr Sa
 
 > df (1) - report file system disk space usage
 
-display the disk space usage in human readable format
+e.g. display the disk space usage in human readable format
 
 ```
 user@pc ~ $ df -h
@@ -50,7 +50,7 @@ tmpfs           405M   52K  404M   1% /run/user/1000
 
 > free (1) - Display amount of free and used memory in the system
 
-display the memory usage in human readable format
+e.g. display the memory usage in human readable format
 
 ```
 user@pc ~ $ free -h

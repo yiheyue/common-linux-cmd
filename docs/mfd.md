@@ -37,14 +37,14 @@ The most common used options for cp
 | -u           | --update      |
 | -v           | --verbose     |
 
-copy foo to bar with informative messages
+e.g. copy foo to bar with informative messages
 
 ```
 user@pc ~ $ cp -v foo bar
 foo -> bar
 ```
 
-copy foo to bar with a confirmation of overwriting
+e.g. copy foo to bar with a confirmation of overwriting
 
 ```
 user@pc ~ $ cp -i foo bar
@@ -69,13 +69,13 @@ The most common used options for mv
 | -u           | --update      |
 | -v           | --verbose     |
 
-move foo bar into dir
+e.g. move foo bar into dir
 
 ```
 user@pc ~ $ mv foo bar dir
 ```
 
-rename foo to bar
+e.g. rename foo to bar
 
 ```
 user@pc ~ $ mv foo bar
@@ -85,13 +85,13 @@ user@pc ~ $ mv foo bar
 
 > mkdir (1) - make directories
 
-create three directories named "dist", "build", "src"
+e.g. create three directories named "dist", "build", "src"
 
 ```
 user@pc ~ $ mkdir dist build src
 ```
 
-create two directory named "components", "NavBar" and "NavBar" inside "components"
+e.g. create two directory named "components", "NavBar" and "NavBar" inside "components"
 
 ```
 user@pc ~ $ mkdir -p components/NavBar
@@ -114,7 +114,7 @@ When we use `rm` command, add the `-i` option is recommanded.
 
 If you add `-f` or `--force` option, it will override the `-i` or `--interactive` option.
 
-remove foo with a confirmation of deleting
+e.g. remove foo with a confirmation of deleting
 
 ```
 user@pc ~ $ rm -i foo
@@ -135,13 +135,13 @@ Hard links have two important limitations:
 
 2. A hard link may not reference a directory.
 
-create a hard link for foo
+e.g. create a hard link for foo
 
 ```
 user@pc ~ $ ln foo foo2
 ```
 
-create a symbolic link for foo
+e.g. create a symbolic link for foo
 
 ```
 user@pc ~ $ ln -s foo foo2
