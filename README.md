@@ -15,3 +15,5 @@ Common Linux commands list.
 - [I/O redirection](./docs/redirect.md)
 
 - [Shell expansions and quoting](./docs/sheq.md)
+
+- [Advanced keyboard operation](adkb.md)
