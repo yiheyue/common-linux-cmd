@@ -36,7 +36,7 @@ The Readline documentation uses the terms killing and yanking to refer to what w
 
 Cut and paste commands
 
-| Key        | Action |
-| ---------- | ------ |
+| Key        | Action                                                          |
+| ---------- | --------------------------------------------------------------- |
 | [Ctrl + k] | Kill text from the cursor location to **the end of line**       |
 | [Ctrl + u] | Kill text from the cursor location to **the beginning of line** |
