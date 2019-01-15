@@ -36,7 +36,14 @@ The Readline documentation uses the terms killing and yanking to refer to what w
 
 Cut and paste commands
 
-| Key        | Action                                                          |
-| ---------- | --------------------------------------------------------------- |
-| [Ctrl + k] | Kill text from the cursor location to **the end of line**       |
-| [Ctrl + u] | Kill text from the cursor location to **the beginning of line** |
+| Key               | Action                                                                |
+| ----------------- | --------------------------------------------------------------------- |
+| [Ctrl + k]        | Kill text from the cursor location to **the end of line**             |
+| [Ctrl + u]        | Kill text from the cursor location to **the beginning of line**       |
+| [Alt + d]         | Kill text from the cursor location to **the end of the current word** |
+| [Alt + Backspace] | Kill text from the cursor location to **the beginning of the word**   |
+| [Ctrl + y]        | Yank text from the kill-ring and insert it at the cursor location     |
+
+## Completion
+
+Completion occurs when user press [Tab] key.
