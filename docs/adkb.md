@@ -47,3 +47,10 @@ Cut and paste commands
 ## Completion
 
 Completion occurs when user press [Tab] key.
+
+Completion commands
+
+| Key       | Action                               |
+| --------- | ------------------------------------ |
+| [Alt + ?] | Display list of possible completions |
+| [Alt + *] | Insert all possible completions      |
