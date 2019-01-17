@@ -17,3 +17,5 @@ Common Linux commands list.
 - [Shell expansions and quoting](./docs/sheq.md)
 
 - [Advanced keyboard operation](./docs/adkb.md)
+
+- [Permission](./docs/perm.md)
