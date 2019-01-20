@@ -19,3 +19,5 @@ Common Linux commands list.
 - [Advanced keyboard operation](./docs/adkb.md)
 
 - [Permission](./docs/perm.md)
+
+- [Process](./docs/proc.md)
