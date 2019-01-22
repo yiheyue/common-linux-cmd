@@ -2,6 +2,24 @@
 
 bash uses a library (a shared collection of routines that different programs can use) called Readline to implement command line editing.
 
+## clear
+
+> clear (1) - clear the terminal screen
+
+e.g. clear the terminal screen
+
+```
+user@pc ~ $ clear
+```
+
+## history
+
+> history (3readline) - GNU History Library
+
+## script
+
+> script (1) - make typescript of terminal session
+
 ## Move the cursor
 
 The following table lists the keys used to move the cursor.
@@ -54,3 +72,62 @@ Completion commands
 | --------- | ------------------------------------ |
 | [Alt + ?] | Display list of possible completions |
 | [Alt + *] | Insert all possible completions      |
+
+## History commands
+
+We can view the contents of the commands history at any time.
+
+e.g. view the history
+
+```
+user@pc ~ $ history | less
+...
+...
+```
+
+e.g. search command using `grep`
+
+```
+user@pc ~ $ history | grep root
+1367  su root
+```
+
+e.g. using history expansion to execute the command
+
+```
+user@pc ~ $ !1367
+su root
+Password:
+```
+
+### Search the history list incrementally
+
+- type [Ctrl + r] to start incremental search
+
+- type [Enter] to execute the command
+
+- type [Ctrl + j] to copy this command to the current command line
+
+- type [Ctrl + g] or [Ctrl + c] to quit searching
+
+History commands
+
+| Key        | Action                                                                   |
+| ---------- | ------------------------------------------------------------------------ |
+| [Ctrl + p] | Move to the **previous** history entry                                   |
+| [Ctrl + n] | Move to the **next** history entry                                       |
+| [Alt + <]  | Move to the **beginning** of history list                                |
+| [Alt + >]  | Move to the **end** of history list                                      |
+| [Ctrl + r] | Reverse incremental search                                               |
+| [Alt + p]  | Reverse search, non-incremental                                          |
+| [Alt + n]  | Forward search, non-incremental                                          |
+| [Ctrl + o] | Execute the current item in the history list and advance to the next one |
+
+History expansion commands
+
+| Sequence | Action                                             |
+| -------- | -------------------------------------------------- |
+| !!       | Repeat the last command                            |
+| !number  | Repeat history list item number                    |
+| !string  | Repeat last history list item starting with string |
+| !?string | Repeat last history list item containing string    |
