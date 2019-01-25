@@ -146,10 +146,18 @@ user@pc ~ $ kill 1931
 
 ## killall
 
+> killall (1) - kill processes by name
+
 ## pstree
 
+> pstree (1) - display a tree of processes
+
 ## vmstat
+
+vmstat (1) - Report virtual memory statistics
 
 ## xload
 
 ## tload
+
+> tload (1) - graphic representation of system load average
