@@ -154,7 +154,7 @@ user@pc ~ $ kill 1931
 
 ## vmstat
 
-vmstat (1) - Report virtual memory statistics
+> vmstat (1) - Report virtual memory statistics
 
 ## xload
 
