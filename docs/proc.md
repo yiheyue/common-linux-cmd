@@ -158,6 +158,8 @@ user@pc ~ $ kill 1931
 
 ## xload
 
+> xload (1) - system load average display for X
+
 ## tload
 
 > tload (1) - graphic representation of system load average
