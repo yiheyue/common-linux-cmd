@@ -231,6 +231,12 @@
     使用 `-r` 选项递归地复制目录及目录中的内容（例如：将目录 dir1 以及其内的文件复制到 dir2 中）
 
     ```bash
+    # dir2 存在时，将 dir1 目录挂载在 dir2 下
+    tony@pc:~$ cp -r dir1 dir2
+    ```
+
+    ```bash
+    # dir2 不存在时，将 dir1 中的内容挂载在 dir2 下
     tony@pc:~$ cp -r dir1 dir2
     ```
 
@@ -247,3 +253,99 @@
     'foo1' -> 'dir/foo1'
     'foo2' -> 'dir/foo2'
     ```
+
+- mv
+
+    mv 命令用于移动和重命名文件（例如：将 profile 重命名为 new_profile）
+
+    ```bash
+    tony@pc:~$ mv profile new_profile
+    ```
+
+    将 config 和 foo_settings 文件移动到 dconf 目录中
+
+    ```bash
+    tony@pc:~$ mv config foo_settings dconf
+    ```
+
+    将目录 dconf 重命名为 dconfs
+
+    ```bash
+    tony@pc:~$ mv dconf dconfs
+    ```
+
+    将目录 dconfs 目录及其中的文件移动到 all 目录下
+
+    ```bash
+    tony@pc:~$ mv dconfs all
+    ```
+
+    mv 命令有着和 cp 命令功能类似的选项：
+
+    - `-i` - 在重写一个已经存在的文件之前，提示用户确认信息
+
+    - `-u` - 将新的文件覆盖旧的文件
+
+    - `-v` - 显示翔实的操作信息
+
+- rm
+
+    rm 命令用于删除文件或目录（例如：删除文件 foo 和 bar）
+
+    ```bash
+    tony@pc:~$ rm foo bar
+    ```
+
+    使用 `-r` 选项递归地删除目录及其中的文件（例如：删除 dconf 目录下的所有文件和目录）
+
+    ```bash
+    tony@pc:~$ rm -r donf
+    ```
+
+    使用 `-i` 选项给予用户提示信息（例如：提示用户是否删除文件 foo）
+
+    ```bash
+    tony@pc:~$ rm -i foo
+    rm: remove regular file 'foo'? y
+    ```
+
+    使用 `-f` 选项忽视不存在的文件，不显示提示信息
+
+    ```bash
+    tony@pc:~$ rm -f foo
+    ```
+
+    使用 `-v` 选项显示翔实的命令操作信息
+
+    ```bash
+    tony@pc:~$ rm -rv conf
+    removed 'conf/foo'
+    removed 'conf/bar'
+    removed directory 'conf/'
+    ```
+
+- ln
+
+    ln 命令用于创建链接（硬链接、软链接，软链接也被称为符号链接）
+
+    ```bash
+    tony@pc:~$ ln foo foo.hard-link
+    ```
+
+    ln 命令默认创建的是硬链接，如果要创建符号链接需要加上 `-s` 选项
+
+    ```bash
+    tony@pc:~$ ln -s foo foo.sym-link
+    ```
+
+    关于链接的说明：
+
+    - 硬链接只能链接文件而不能链接目录，而符号链接既可以链接文件又可以链接目录
+
+    - 当删除源文件时，符号链接会实效，而硬链接不会实效
+
+    - 如果要让符号链接能在系统的各个目录下都有效，则使用绝对路径来创建符号链接
+
+        ```bash
+        tony@pc:~$ ln -s ~/foo foo.sym
+        ```
