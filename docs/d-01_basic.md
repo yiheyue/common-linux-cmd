@@ -423,3 +423,25 @@
     ```bash
     tony@pc:~$ ls -l /usr/bin | tee output | less
     ```
+
+## 其他
+
+- clear
+
+    clear 命令用于清空屏幕
+
+- history
+
+    history 命令用于显示命令历史
+
+- echo
+
+    echo 命令用于输出参数字符串
+
+- printenv
+
+    printenv 命令用于查看环境变量
+
+- sleep
+
+    sleep 命令用于延时执行命令
