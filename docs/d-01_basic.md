@@ -184,3 +184,66 @@
     | q               | 退出 less 程序               |
     | /user           | 向前查找 user 字符串          |
     | n               | 向前查找下一个被指定查找的字符串 |
+
+## 操作文件
+
+- mkdir
+
+    mkdir 命令用于创建新的目录
+
+    ```bash
+    tony@pc:~$ mkdir dirname
+    ```
+
+    创建多个目录
+
+    ```bash
+    tony@pc:~$ mkdir dirname1 dirname2
+    ```
+
+    创建有父子关系的目录
+
+    ```bash
+    tony@pc:~$ mkdir dir1/dir2/dir3 dir4
+    ```
+
+- cp
+
+    cp 命令用于复制文件或目录（例如：给 README.md 文件备份）
+
+    ```bash
+    tony@pc:~$ cp README.md README.md.backup
+    ```
+
+    将 README.md 和 source.js 文件复制到 src 目录中
+
+    ```bash
+    tony@pc:~$ cp README.md source.js src
+    ```
+
+    使用 `-i` 选项提示用户确认是否要重写文件（例如：foo 文件已存在，将 new_foo 复制一个名为 foo 的副本）
+
+    ```bash
+    tony@pc:~$ cp -i new_foo foo
+    cp: overwrite 'foo'? y
+    ```
+
+    使用 `-r` 选项递归地复制目录及目录中的内容（例如：将目录 dir1 以及其内的文件复制到 dir2 中）
+
+    ```bash
+    tony@pc:~$ cp -r dir1 dir2
+    ```
+
+    使用 `-u` 选项让新的文件覆盖已存在的文件
+
+    ```bash
+    tony@pc:~$ cp -u foo1 foo2 dir
+    ```
+
+    使用 `-v` 选项显示翔实的命令操作信息
+
+    ```bash
+    tony@pc:~$ cp -v foo1 foo2 dir
+    'foo1' -> 'dir/foo1'
+    'foo2' -> 'dir/foo2'
+    ```
