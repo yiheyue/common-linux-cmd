@@ -185,6 +185,46 @@
     | /user           | 向前查找 user 字符串          |
     | n               | 向前查找下一个被指定查找的字符串 |
 
+- cat
+
+    cat 命令可以用于查看文件的内容（例如：查看 foo 文件的内容）
+
+    ```bash
+    tony@pc:~$ cat foo
+    hello world
+    ```
+
+- head
+
+    head 命令用于显示文件的头部内容（默认是开头 10 行，如果要自己指定显示行数，需要加 `-n` 选项）
+
+    ```bash
+    tony@pc:~$ head -n 20 foo
+    hello world
+    hello world
+    ...
+    ```
+
+- tail
+
+    tail 命令用于显示文件的尾部内容（默认是末尾 10 行，如果要自己指定显示行数，需要加 `-n` 选项）
+
+    ```bash
+    tony@pc:~$ tail -n 20 foo
+    hello world
+    hello world
+    ...
+    ```
+
+- wc
+
+    wc 命令用于统计文本内容的行数、单词数及文本大小
+
+    ```bash
+    tony@pc:~$ wc foo
+     2  2 12 foo
+    ```
+
 ## 操作文件
 
 - mkdir
@@ -349,3 +389,37 @@
         ```bash
         tony@pc:~$ ln -s ~/foo foo.sym
         ```
+
+## “过滤器”
+
+- sort
+
+    sort 命令用于排列文本行
+
+    ```bash
+    tony@pc:~$ ls ~ | sort -r | less
+    ```
+
+- uniq
+
+    uniq 命令用于去除文本行中的重复行
+
+    ```bash
+    tony@pc:~$ ls /bin /usr/bin | sort | uniq | less
+    ```
+
+- grep
+
+    grep 命令用于获取匹配项
+
+    ```bash
+    tony@pc:~$ ls /bin /usr/bin | sort | uniq | grep zip | less
+    ```
+
+- tee
+
+    tee 命令从标准输入读取内容，将内容写入标准输出或文件
+
+    ```bash
+    tony@pc:~$ ls -l /usr/bin | tee output | less
+    ```
