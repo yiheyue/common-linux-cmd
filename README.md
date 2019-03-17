@@ -9,3 +9,5 @@
 - [命令详解](./docs/d-02_about_cmd.md)
 
 - [快捷键](./docs/d-03_shortcut.md)
+
+- [权限](./docs/d-04_perm.md)
