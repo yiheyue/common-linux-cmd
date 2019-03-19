@@ -45,6 +45,10 @@
 
     ssh 命令是 OpenSSH 的客户端程序
 
+    ```bash
+    tony@pc:~$ ssh remote
+    ```
+
 - scp
 
     scp 即 secure copy，用于复制远程主机的文件
