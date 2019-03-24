@@ -76,17 +76,17 @@
     常用信号
 
     | 编号 | 名字  | 含义                              |
-    | --- | ----- | -------------------------------- |
-    | 1   | HUP   | 即 Hangup，挂起                   |
-    | 2   | INT   | 即 Interrupt，中断                |
-    | 3   | QUIT  | 即 Quit，退出                     |
-    | 9   | KILL  | 即 Kill，杀死                     |
-    | 11  | SEGV  | 即 Segmentation Violation，段错误 |
-    | 15  | TERM  | 即 Terminate，终止                |
-    | 18  | CONT  | 即 Continue，继续                 |
-    | 19  | STOP  | 即 Stop，停止                     |
-    | 20  | TSTP  | 即 Terminal Stop，终端停止         |
-    | 28  | WINCH | 即 Window Change，窗口大小改变      |
+    | ---- | ----- | --------------------------------- |
+    | 1    | HUP   | 即 Hangup，挂起                   |
+    | 2    | INT   | 即 Interrupt，中断                |
+    | 3    | QUIT  | 即 Quit，退出                     |
+    | 9    | KILL  | 即 Kill，杀死                     |
+    | 11   | SEGV  | 即 Segmentation Violation，段错误 |
+    | 15   | TERM  | 即 Terminate，终止                |
+    | 18   | CONT  | 即 Continue，继续                 |
+    | 19   | STOP  | 即 Stop，停止                     |
+    | 20   | TSTP  | 即 Terminal Stop，终端停止        |
+    | 28   | WINCH | 即 Window Change，窗口大小改变    |
 
     使用 kill 命令将 PID 为 5097 的进程挂起
 
